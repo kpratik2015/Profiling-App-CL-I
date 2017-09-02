@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    tools:context="in.mitcoe.profiling.ProfileEntry">
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="EMAIL ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/etNewEmail"
+        android:layout_alignBottom="@+id/etNewEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNewEmail"
+        android:hint="Enter valid Email-ID"
+        android:layout_below="@+id/etNewName"
+        android:layout_alignLeft="@+id/etNewName"
+        android:layout_alignStart="@+id/etNewName" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNewLocality"
+        android:hint="Enter Current City"
+        android:layout_below="@+id/etNewEmail"
+        android:layout_alignLeft="@+id/etNewEmail"
+        android:layout_alignStart="@+id/etNewEmail" />
+
+    <TextView
+        android:text="CITY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/etNewLocality"
+        android:layout_alignBottom="@+id/etNewLocality"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="13"
+        android:id="@+id/etNewMobile"
+        android:hint="Enter 10 digit Mobile Number"
+        android:layout_below="@+id/etNewLocality"
+        android:layout_alignLeft="@+id/etNewLocality"
+        android:layout_alignStart="@+id/etNewLocality" />
+
+    <TextView
+        android:text="MOBILE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMobile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/etNewMobile"
+        android:layout_alignBottom="@+id/etNewMobile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="VIEW DATA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAddData"
+        android:layout_toRightOf="@+id/btnAddData"
+        android:layout_toEndOf="@+id/btnAddData"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:id="@+id/btnViewData" />
+
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddData"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="117dp" />
+
+
+
+    <Button
+        android:text="UPDATE DATA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/btnID"
+        android:layout_alignBaseline="@+id/btnViewData"
+        android:layout_alignBottom="@+id/btnViewData"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
